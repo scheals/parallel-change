@@ -26,6 +26,10 @@ end
 
 # This class YetAnotherClient.
 class YetAnotherClient
+  def initialize(authentication_service)
+    @authentication_service = authentication_service
+  end
+
   def run
     AuthenticationService.new.authenticated?(100)
   end
