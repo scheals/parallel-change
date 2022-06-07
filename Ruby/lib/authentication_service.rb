@@ -19,7 +19,7 @@ class AuthenticationClient
   end
 
   def run
-    authenticated = @authentication_service.authenticated?(33)
+    authenticated = @authentication_service.authenticated?(33, 'user')
     puts "authenticated: #{authenticated}"
   end
 end
