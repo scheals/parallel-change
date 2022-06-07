@@ -36,6 +36,6 @@ class YetAnotherClient
 end
 
 if __FILE__ == $PROGRAM_NAME
-  client = YetAnotherClient.new(AuthenticationService.new)
+  client = AuthenticationClient.new(AuthenticationService.new)
   client.run
 end
