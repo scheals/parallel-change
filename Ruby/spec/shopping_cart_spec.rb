@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './shopping_cart'
+require_relative '../lib/shopping_cart'
 
 describe 'ShoppingCart' do
   it 'may just have a single item' do

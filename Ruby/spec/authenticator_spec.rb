@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './authentication_service'
+require_relative '../lib/authentication_service'
 
 describe 'Authenticator' do
   describe 'administrator' do

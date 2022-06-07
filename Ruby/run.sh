@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-rspec ./*_spec.rb &&
-  ruby ./authentication_service.rb &&
-  ruby ./shopping_cart.rb
+rspec ./spec/*_spec.rb &&
+  ruby ./lib/authentication_service.rb &&
+  ruby ./lib/shopping_cart.rb
