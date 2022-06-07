@@ -1,15 +1,18 @@
-class AuthenticationService
+# frozen_string_literal: true
 
+# This class AuthenticationService.
+class AuthenticationService
   #
   # the goal is to replace the following method with:
   # def authenticated?(role, user_id)
   #
 
   def authenticated?(user_id)
-    user_id == 12345
+    user_id == 12_345
   end
 end
 
+# This class AuthenticationClient.
 class AuthenticationClient
   def initialize(authentication_service)
     @authentication_service = authentication_service
@@ -21,6 +24,7 @@ class AuthenticationClient
   end
 end
 
+# This class YetAnotherClient.
 class YetAnotherClient
   def run
     AuthenticationService.new.authenticated?(100)

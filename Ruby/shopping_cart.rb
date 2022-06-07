@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# This class handles ShoppingCart.
 class ShoppingCart
   def initialize
     #
@@ -20,11 +23,12 @@ class ShoppingCart
     @price
   end
 
-  def has_discount?
+  def discount?
     @price >= 100
   end
 end
 
+# This class SomeConsumer.
 class SomeConsumer
   def do_stuff
     shopping_cart = ShoppingCart.new
