@@ -7,7 +7,7 @@ class AuthenticationService
   # def authenticated?(role, user_id)
   #
 
-  def authenticated?(user_id)
+  def authenticated?(user_id, role = :FIX_ME)
     user_id == 12_345
   end
 end
