@@ -31,11 +31,11 @@ class YetAnotherClient
   end
 
   def run
-    AuthenticationService.new.authenticated?(100)
+    @authentication_service.authenticated?(100)
   end
 end
 
 if __FILE__ == $PROGRAM_NAME
-  client = AuthenticationClient.new(AuthenticationService.new)
+  client = YetAnotherClient.new(AuthenticationService.new)
   client.run
 end
