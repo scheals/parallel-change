@@ -42,5 +42,5 @@ if __FILE__ == $PROGRAM_NAME
   shopping_cart.add(10)
   puts "number of products: #{shopping_cart.number_of_products}"
   puts "total price: #{shopping_cart.calculate_total_price}"
-  puts "has discount: #{shopping_cart.has_discount?}"
+  puts "has discount: #{shopping_cart.discount?}"
 end

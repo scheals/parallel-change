@@ -19,7 +19,7 @@ describe 'ShoppingCart' do
     it 'has discount' do
       shopping_cart = ShoppingCart.new
       shopping_cart.add(100)
-      expect(shopping_cart.has_discount?).to be true
+      expect(shopping_cart.discount?).to be true
     end
   end
 
@@ -27,7 +27,7 @@ describe 'ShoppingCart' do
     it 'does not have discount' do
       shopping_cart = ShoppingCart.new
       shopping_cart.add(10)
-      expect(shopping_cart.has_discount?).to be false
+      expect(shopping_cart.discount?).to be false
     end
   end
 end
