@@ -7,7 +7,7 @@ class AuthenticationService
   # def authenticated?(role, user_id)
   #
 
-  def authenticated?(role = :FIX_ME, user_id)
+  def authenticated?(role = :FIX_ME, user_id = 'FIX_ME')
     user_id = role if user_id.is_a?(String)
     user_id == 12_345
   end
