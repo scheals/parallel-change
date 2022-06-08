@@ -8,7 +8,7 @@ class ShoppingCart
     # @prices = []
     #
 
-    @price = 0
+    @price = []
   end
 
   def add(price)
