@@ -16,11 +16,7 @@ class ShoppingCart
   end
 
   def number_of_products
-    if @prices.is_a?(Integer)
-      1
-    else
       @prices.size
-    end
   end
 
   def calculate_total_price
