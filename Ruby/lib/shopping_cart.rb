@@ -12,23 +12,19 @@ class ShoppingCart
   end
 
   def add(price)
-      @prices << price
+    @prices << price
   end
 
   def number_of_products
-      @prices.size
+    @prices.size
   end
 
   def calculate_total_price
-      @prices.sum
+    @prices.sum
   end
 
   def discount?
-    if @prices.is_a?(Integer)
-      @prices >= 100
-    else
-      @prices.any? { |price| price >= 100 }
-    end
+    @prices.any? { |price| price >= 100 }
   end
 end
 
