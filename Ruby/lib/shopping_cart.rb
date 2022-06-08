@@ -32,7 +32,11 @@ class ShoppingCart
   end
 
   def discount?
-    @price >= 100
+    if @price.is_a?(Integer)
+      @price >= 100
+    else
+      @price.any? { |price| price >= 100 }
+    end
   end
 end
 
