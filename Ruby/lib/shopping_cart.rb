@@ -12,11 +12,7 @@ class ShoppingCart
   end
 
   def add(price)
-    if @prices.is_a?(Integer)
-      @prices = price
-    else
       @prices << price
-    end
   end
 
   def number_of_products
