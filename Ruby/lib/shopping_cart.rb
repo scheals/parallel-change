@@ -20,7 +20,11 @@ class ShoppingCart
   end
 
   def calculate_total_price
-    @price
+    if @price.is_a?(Integer)
+      @price
+    else
+      @price.sum
+    end
   end
 
   def discount?
